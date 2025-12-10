@@ -1,0 +1,29 @@
+section#primo-piano {
+    background-image: url("./images/palme.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+section#primo-piano > div {
+    min-width: 200px;
+    min-height: 150px;
+    border: 2px solid lightgreen;
+    color: white;
+}
+h1 {
+    /* text-decoration: line-through; */
+    text-transform: uppercase;
+    text-shadow: .2rem .2rem 1rem #333;
+}
+@media screen and (min-width: 768px) {
+    section#primo-piano {
+        flex-direction: row;
+        align-items:center;
+        min-height: 300px;
+    }
+    
+}

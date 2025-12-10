@@ -1,0 +1,27 @@
+section{
+    width: 500px;
+    height: 150px;
+    border: 3px solid black;
+    margin: 20px;
+}
+body section:nth-child(1){
+    background-color: aquamarine;
+    overflow: auto;
+}
+body section:nth-child(2){
+    background-color: lightsalmon;
+    overflow: hidden;
+}
+body section:nth-child(3){
+    background-color: lightskyblue;
+    overflow: scroll;
+}
+body section:nth-child(4){
+    background-color: lightslategrey;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+body section:nth-child(5){
+    background-color: lightpink;
+    overflow: visible;
+}

@@ -1,0 +1,11 @@
+input:disabled{
+    background-color: #555555;
+    color: white;
+}
+input:checked ~ label{
+    font-size: 2em;
+    color: tomato;
+}
+input:checked{
+    margin-left:20px;
+}

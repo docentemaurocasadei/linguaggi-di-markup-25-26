@@ -1,0 +1,11 @@
+body {
+    margin: 0px;
+}
+table {
+    table-layout: auto;
+    width: 100%;
+    border-collapse: collapse;
+}
+table, tr, td {
+    border: 1px solid black;
+}

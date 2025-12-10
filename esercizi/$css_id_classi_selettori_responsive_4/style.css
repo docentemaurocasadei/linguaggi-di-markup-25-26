@@ -1,0 +1,96 @@
+/* 
+    per selezionare colore https://coolors.co/
+    per impostare diverso carattere https://fonts.google.com/
+*/
+:root {
+    --colore-primario: #4F6367;
+    --colore-secondario: #D9E4E5;
+    --colore-accento: #F28C0F;
+}
+html {
+    font-family: 'Arial', sans-serif;
+}
+.playwrite-us-trad-guides-regular {
+  font-family: "Playwrite US Trad Guides", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.kedebideri-regular {
+  font-family: "Kedebideri", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kedebideri-medium {
+  font-family: "Kedebideri", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.kedebideri-semibold {
+  font-family: "Kedebideri", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.kedebideri-bold {
+  font-family: "Kedebideri", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.kedebideri-extrabold {
+  font-family: "Kedebideri", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.kedebideri-black {
+  font-family: "Kedebideri", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+nav#menu-principale {
+    background-color: var(--colore-primario);
+}
+nav#menu-principale ul {
+    text-align: center;
+    padding: 15px 0;
+}
+nav#menu-principale li {
+    display: inline-block;
+    margin-right: 20px;
+}
+nav#menu-principale a {
+    text-decoration: none;
+    color: white;
+}
+
+/*main*/
+main{
+    margin-top: 1rem;
+}
+section#primo-piano{
+    background-color: var(--colore-secondario);
+    padding: 1rem;
+    max-width: 90%;
+    margin: 0 auto;
+}
+h2{
+    color: var(--colore-primario);
+}
+section#primo-piano > article {
+    width: 100%;
+    display: inline-block;
+    padding: .5rem;
+}
+li[data-evidenza="rosso"] {
+    color: red;
+    font-weight: bold;
+}
+@media screen and (min-width: 576px) {
+    section#primo-piano > article {
+        width: 47%;
+    }
+}

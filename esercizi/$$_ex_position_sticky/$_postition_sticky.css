@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto' , sans-serif;
+}
+body {
+    margin: 0px;
+}
+#referenze{
+    background-color: #2ed573;
+    min-width: 50px;
+    min-height: 50px;
+    width: 100%;
+    padding: 10px 50px;
+}
+#referenze a{
+    color: white;
+}
+#referenze a:nth-child(1){
+    float: left;
+}
+#referenze a:nth-child(2){
+    float: right;
+}
+#menu-top{
+    text-align: center;
+    background-color: #7bed9f;
+    min-height: 50px;
+    padding: 10px;
+    position: sticky;
+    top: 0px;
+}
+#menu-top li {
+    display: inline;
+}
+#articoli{
+    max-width: 80%;
+    margin: 0 auto;
+}

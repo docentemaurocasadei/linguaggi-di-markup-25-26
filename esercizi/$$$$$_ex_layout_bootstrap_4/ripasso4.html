@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="ripasso4.css">
+  </head>
+  <body>
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Ripasso4</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="p-5 bg-body-tertiary rounded-3">
+        <div class="container-fluid py-5 text-center">
+          <h1 class="display-5 fw-bold">Ripasso4</h1>
+          <p class="col-md-8 offset-md-2 fs-4 text-center">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
+          <button class="btn btn-primary btn-lg" type="button" id="cta">Example button</button>
+        </div>
+      </div>
+      <section class="container-fluid bg-warning">
+        <form class="myform  py-2">
+            <div class="mb-3 me-3 border-top border-bottom">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3 me-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check me-3">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+          </form>
+      </section>
+      <section id="news" class="container mt-3">
+        <div class="row justify-content-evenly">
+            <div class="col-12 col-sm-6 col-md-4 p-1">
+                <div class="card" >
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Card title</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 p-1">
+                <div class="card" >
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Card title</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 p-1">
+                <div class="card" >
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Card title</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section class="mt-3 text-light py-4 px-5 text-center" id="payoff">
+        <h2 class="display-4">Bootstrap e lo sviluppo tramite Framework</h2>
+        <div class="pellicola"></div>
+      </section>
+      <section id="faq" class="mt-3 container px-1">
+        <h2 id="title_faq" class="display-6 text-center">Domande frequenti</h2>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Accordion Item #1
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Accordion Item #2
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <footer class="container-fluid bg-light border-top mt-3">
+        <section class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="./logo.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum exercitationem velit, aliquam porro corrupti animi quae? </p>
+                </div> 
+                <div class="col-md-4 offset-md-4">
+                    <div class="fs-1 mt-3">Menù</div>
+                    <ul class="ps-2">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Chi Siamo</a>
+                        </li>
+                        <li>
+                            <a href="#">Contatti</a>
+                        </li>
+                    </ul>
+                </div> 
+            </div>
+        </section>
+      </footer>
+      <section id="socket" class="border-top" >
+        <address class="text-dark text-center mb-0">
+            Mia Azienda s.r.l. | Rimini | p.iva: 00223344556
+        </address>
+      </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

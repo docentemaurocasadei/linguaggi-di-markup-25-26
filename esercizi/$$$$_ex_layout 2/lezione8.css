@@ -1,0 +1,171 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+.container {
+    width: 90%;
+    margin: 16px auto;
+}
+.container-100 {
+    width: 100%;
+    background-color: #102027;
+}
+#gallery > div{
+    display: inline-block;
+    width: 49%;
+    height: 100px;
+    position: relative;
+    cursor: pointer;
+}
+#gallery > div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    
+}
+/* #gallery > div img:hover {
+    opacity: .5;
+} */
+#gallery div.effetto{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.411);
+    position: absolute;
+    top: 0;
+}
+#gallery div.effetto:hover{
+    background-color: rgba(255, 255, 255, 0.267);
+    transition-duration: 1s;
+}
+#gallery > div > div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+div.titolo-gallery {
+    z-index: 3!important;
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    flex-wrap: wrap;
+
+}
+#gallery h3 {
+    color: white;
+    min-width: 100px;
+    border: 1px solid white;
+    padding: 3px;
+}
+/* #gallery > div:nth-child(1){
+    display: none;
+} */
+.titolo-principale{
+    text-align: center;
+    margin: 1em;
+    text-shadow: 3px 3px 5px black;
+}
+#riferimenti {
+    background-color: #102027;
+    overflow: auto;
+    padding: 10px;
+}
+#riferimenti div {
+    width: 90%;
+    margin: 0 auto;
+}
+#riferimenti a {
+    color: white;
+}
+#riferimenti a:nth-child(1){
+    float: left;
+}
+#riferimenti a:nth-child(2){
+    float: right;
+}
+#top-menu{
+    background-color: #b2ff59;
+    padding: .7em;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+#top-menu a {
+    color: black;
+    
+}
+.fa-whatsapp{
+    color: greenyellow;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+}
+#descrizione p {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 2px;
+}
+#descrizione h2 {
+    text-align: center;
+}
+section#primo-piano {
+    padding: 16px 0px;
+}
+section#primo-piano article {
+    border: 1px solid white;
+    border-radius: 3px;
+    color: white;
+    padding: 5px;
+}
+section#primo-piano button {
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 5px;
+    color: white;
+    background-color: transparent;
+}
+section#primo-piano > section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+section#primo-piano > section > div {
+    margin-top: 16px;
+    text-align: center;
+}
+#primo-piano article p, #primo-piano article i {
+    margin: 16px 0px;
+}
+section#primo-piano > section > div:nth-child(1) {
+    order: 8;
+}
+section#primo-piano > section > div:nth-child(2) {
+    order: 2;
+}
+section#primo-piano > section > div:nth-child(3) {
+    order: 3;
+}
+@media screen and (min-width: 768px) {
+    .container {
+        width: 80%;
+    }
+    #gallery div{
+        width: 33%;
+        height: 200px;
+    }
+    #descrizione p {
+        column-count: 3;
+        column-rule: 1px solid black;
+        column-gap: 12px;
+    }
+    section#primo-piano > section {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    section#primo-piano > section > div {
+        padding: 0 5px;
+        width: 33%;
+    }
+}

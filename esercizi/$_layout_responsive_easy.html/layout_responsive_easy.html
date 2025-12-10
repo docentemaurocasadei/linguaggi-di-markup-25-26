@@ -1,0 +1,46 @@
+<!-- 
+    1. creare un layout semplice:
+    un div di dimensione (width, height) 300px * 300px
+    definire delle regole per cui:
+    da 576 il div rimane 300x300 di colore azzurro
+    da 768 il div diventa 450x450 di colore pink
+    da 992 il div diventa 600x600 di colore orange
+    da 1200 il div diventa 750x750 di colore green
+
+    2. aggiungere prima del div un article con titolo e contenuto (h3, p)
+        inserire dentro l'article un link (a) di approfondimento di colore green
+
+    3. aggiungere in fondo un footer
+        inserire dentro al footer un link (a) con indicato 
+        sviluppato da + vs nome di colore grigio
+
+    4. verificare che colore del link dell'articolo non sia stato modificato
+
+
+
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Ex Layout responsive Easy</title>
+     <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+     <article>
+         <header>
+             <h3>Lorem Ipsum</h3>
+         </header>
+         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+         <a href="#">approfondimenti</a>
+     </article>
+     <hr>
+     <div id="myDiv"></div>
+     <hr>
+     <footer>
+         <a href="#" class="credits">Sviluppato da Mauro</a>
+     </footer>
+ </body>
+ </html>

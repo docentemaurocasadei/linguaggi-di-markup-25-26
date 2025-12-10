@@ -1,0 +1,152 @@
+/* ===================
+   Palette colori
+=================== */
+
+/* Verde moderno */
+:root {
+    --verde-primario: #2E7D32;     /* barra menu + footer */
+    --verde-socket:   #4CAF50;     /* socket più chiaro */
+    --colore-secondario: #F0F4F2;  /* sfondo articoli */
+}
+
+/* ===================
+   Font globali
+=================== */
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+.font-menu {
+    font-family: 'Poppins', sans-serif;
+}
+
+.font-testo {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ===================
+   Menu principale
+=================== */
+nav#menu-principale {
+    background-color: var(--verde-primario);
+}
+
+nav#menu-principale ul {
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav#menu-principale li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav#menu-principale a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+}
+
+/* ===================
+   Contenuto principale
+=================== */
+#servizi {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 2rem 1rem;
+    background-color: var(--colore-secondario);
+    justify-content: center;
+}
+
+#servizi article {
+    background: white;
+    padding: 1rem;
+    width: 100%;
+    max-width: 350px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    color: var(--verde-primario);
+}
+
+/* ===================
+   Footer
+=================== */
+
+footer {
+    background-color: var(--verde-primario);
+    color: white;
+    margin-top: 3rem;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-col {
+    width: 48%;
+}
+
+/* Logo piccolo */
+.col-logo img {
+    width: 80px;
+    height: auto;
+}
+
+.col-logo p {
+    margin-top: 0.5rem;
+}
+
+/* Colonna link centrata */
+.col-links ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.col-links li {
+    margin: 6px 0;
+}
+
+.col-links a {
+    color: white;              /* link bianchi */
+    text-decoration: none;
+    font-weight: 300;
+}
+
+/* ===== Socket ===== */
+.socket {
+    background-color: var(--verde-socket);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+/* ===================
+   Responsive
+=================== */
+@media (max-width: 600px) {
+
+    .footer-col {
+        width: 100%;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+}

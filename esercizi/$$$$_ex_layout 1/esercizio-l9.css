@@ -1,0 +1,173 @@
+body{
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+}
+#logo{
+    margin: 20px auto;
+    display: block;
+    max-width: 120px;
+}
+/*generale*/
+section{
+    color: #333;
+}
+
+.container{
+    margin: 20px auto;
+    width: 80%;
+    font-size: 0px;
+}
+.container *{
+    font-size: 15px;
+}
+/*fine generale*/
+/*menu*/
+ul{
+    padding-inline-start:0px;
+}
+ul li{
+    margin: 0px 10px;
+}
+nav{
+    padding:2px
+}
+nav#nav-menu ul li{
+    display: inline;
+}
+#nav-menu{
+    background-color:purple;
+    color: white;
+}
+#nav-menu{
+    text-align: center;
+}
+/*fine menu*/
+
+
+/*servizi*/
+section#servizi div{
+    width: 33%;
+    display: inline-block;
+    text-align: center;
+}
+section#servizi article h2 {
+    column-span: all;
+}
+.servizio{
+    padding: 0px 10px;
+    box-sizing: border-box;
+    text-align: justify;
+}
+/*fine servizi*/
+/*mission*/
+#mission{
+    min-height: 200px;
+}
+#mission h2{
+    text-align: center;
+}
+#mission{
+    /* background-color: darkcyan; */
+    background-image: url('sfondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+    padding: 80px 0px;
+    width: 100%;
+    position: relative;
+}
+#mission h2{
+    text-align: center;
+    color: white;
+    position: relative;
+    padding: 10% 0px;
+}
+.pellicola{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.692);
+    position: absolute;
+    top:0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/*fine mission*/
+/*news*/
+section#news article {
+    vertical-align: top;
+}
+section#news article:nth-child(1){
+    column-count: 2;
+    width: 70%;
+    display: inline-block;
+}
+section#news article:nth-child(2){
+    width: 30%;
+    display: inline-block;
+}
+section#news article h2 {
+    column-span: all;
+}
+/*fine news*/
+/*gallery*/
+#gallery h2{
+    text-align: center;
+    font-size: 32px;
+}
+#gallery img{
+    width: 23%;
+    border-radius: 3px;
+    margin-right: 2%;
+}
+#gallery{
+    margin-bottom: 40px;
+}
+/*fine gallery*/
+/*footer*/
+#footer{
+    background-color: #333;
+    width: 100%;
+    margin-top: 10px 0px 0px 0px;
+    padding: 20px 0px;
+    color: white;
+    text-align: center  ;
+}
+/*fine footer*/
+@media screen and (max-width:768px){
+    nav#nav-menu ul li{
+        display: block;
+    }
+    #colsx-azienda,#coldx-azienda{
+        width:100%;
+    }
+    .container{
+        width: 90%;
+    }
+    section#news article:nth-child(1){
+        column-count: 1;
+    }
+    #mission h2{
+        padding: 30% 0px;
+    }
+    section#servizi div{
+        display: block;
+        width: 100%;
+    }
+    section#news article:nth-child(1){
+        column-count: 1;
+        width: 100%;
+    }
+    section#news article:nth-child(2){
+        width: 100%;
+    }
+    /*gallery*/
+    #gallery img{
+        width: 48%;
+        border-radius: 3px;
+        margin-right: 2%;
+        margin-bottom: 2%;
+    }
+    /*fine gallery*/
+}

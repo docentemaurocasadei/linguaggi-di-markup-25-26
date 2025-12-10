@@ -1,0 +1,20 @@
+.ucfirst::first-letter{
+    font-size: 2em;
+    display: block;
+}
+
+/*secondo esercizio*/
+.bold-firstline::first-line{
+    font-weight: bold;
+}
+section#testo:nth-child(1){
+    max-width: 50%;
+}
+section#testo:nth-child(2){
+    max-width: 80%;
+}
+
+/*terzo esercizio*/
+p::before{
+    content: "-";
+}

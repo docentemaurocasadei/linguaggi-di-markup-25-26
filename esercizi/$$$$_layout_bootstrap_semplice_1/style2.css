@@ -1,0 +1,18 @@
+.carousel-item img {
+    max-height: 18rem;
+    object-fit: cover;
+}
+/* #notizie{
+    margin-top: 1rem;
+} */
+ .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (min-width: 768px) {
+    .carousel-item img {
+        max-height: 25rem;
+    }
+}

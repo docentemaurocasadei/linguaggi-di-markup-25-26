@@ -1,0 +1,31 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+section#main span {
+    margin: 20px 20px;
+}
+section#main span:first-child{
+    color: darkorange;
+}
+section#main a:link{
+    color: lightskyblue;
+}
+section#main a:visited{
+    color: greenyellow;
+}
+section#main a:active{
+    color: darkseagreen;
+}
+#quadrato{
+    width: 50px;
+    height: 50px;
+    border: 1px dashed deeppink;
+}
+#quadrato:hover{
+    background-color: deeppink;
+    cursor: pointer;
+}
+#quadrato:active{
+    background-color: greenyellow;
+    cursor: pointer;
+}

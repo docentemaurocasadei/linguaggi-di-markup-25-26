@@ -1,0 +1,54 @@
+<!-- creare un form con 
+    fieldset dati accesso
+    - input text name=codice - disabled
+    - input text name=nome
+    - input password name=password
+    fieldset interessi
+    - input checkbox name=cinema
+    - input checkbox name=teatro
+    - input checkbox name=sport
+
+    impostare sfondo grigio scuro ad input disabled
+    impostare font-size doppio alla label di un input checked e colore tomato
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menù pseudoclassi</title>
+    <link rel="stylesheet" href="./menu-pseudoclassi-input.css">
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Dati Accesso</legend>
+            <label for="codice">Codice:</label>
+            <input type="text" name="codice" disabled>
+            
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome">
+
+            <label for="password">Password:</label>
+            <input type="password" name="password">
+        </fieldset>
+        <fieldset>
+            <legend>Interessi</legend>
+            <div>
+                <input type="checkbox" id="cinema" name="cinema">               
+                <label for="cinema">Cinema</label>
+            </div>
+            <div>
+                <input type="checkbox" id="teatro" name="teatro">
+                <label for="teatro">Teatro</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="sport" name="sport">
+                <label for="sport">Sport</label>
+            </div>
+    </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ol#primo {
+        list-style: none;
+        counter-reset: li 0;
+        }
+        ol#primo li:before {
+        content: counter(li) ".";
+        counter-increment: li;
+        }
+        ol#secondo {
+        list-style: none;
+        counter-reset: li 2;
+        }
+        ol#secondo li:before {
+        content: counter(li, lower-alpha) ".";
+        counter-increment: li;
+        }
+    </style>
+</head>
+<body>
+    <ol id="primo">
+        <li>Buy milk_</li>
+        <li>Feed the dog</li>
+        <li>Drink coffee</li>
+    </ol>
+    <ol  id="secondo">
+        <li>Buy milk</li>
+        <li>Feed the dog</li>
+        <li>Drink coffee</li>
+    </ol>
+</body>
+</html>

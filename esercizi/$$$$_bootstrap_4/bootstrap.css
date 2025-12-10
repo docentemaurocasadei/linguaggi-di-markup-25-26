@@ -1,0 +1,21 @@
+#carouselExampleControls .carousel-item img {
+    max-height: 400px;
+    min-width: auto;
+    object-fit: cover;
+    object-position: 80% 80%;
+}
+.card-img-top{
+    min-height: 200px;
+    max-height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+.card {
+    width: 15rem !important;
+}
+@media screen and (min-width:768px) {
+    .card {
+        width: 18rem !important;
+    }
+    
+}

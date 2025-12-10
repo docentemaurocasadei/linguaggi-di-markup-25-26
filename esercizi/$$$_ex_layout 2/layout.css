@@ -1,0 +1,86 @@
+
+/*
+creare un file nominato layout.html e il suo foglio di stile layout.css
+dentro questo file inserire un h1 e un menù (ul li)
+l'elenco dei li sarà Home - Chi Siamo - Contatti
+in caso di desktop il menù dovrà essere in linea e blu
+in caso di mobile il menù dovrà essere in block (in verticale) e giallo
+sotto al menù inserire 3 articoli
+in caso di desktop gli articoli dovranno essere in linea
+in caso di mobile gli articoli dovranno essere in block
+
+*/
+body{
+    margin: 0px
+}
+nav{
+    padding:2px
+}
+nav#nav-menu ul li{
+    display: inline;
+}
+#articoli{
+    margin: 20px auto;
+    width: 80%;
+    font-size: 0px;
+}
+#articoli article{
+    display: inline-block;
+    width: 32%;
+    margin-left:1%;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+#nav-menu{
+    background-color: lightskyblue;
+}
+article:nth-child(odd){
+    background-color: lightskyblue;
+}
+#logo{
+    margin: 20px auto;
+    display: block;
+    max-width: 250px;
+}
+#nav-menu{
+    text-align: center;
+}
+#banner-alto{
+    max-height: 250px;
+    overflow: hidden;
+}
+#banner-alto img{
+    max-width: 100%;
+}
+article img{
+    max-width: 100%;
+}
+article{
+    padding: 0px;
+}
+article p,article h3{
+    padding:10px;
+}
+@media screen and (max-width:768px){
+    nav#nav-menu ul li{
+        display: block;
+    }
+    #articoli article{
+        display: block;
+        width: 100%;
+    }
+    #nav-menu{
+        background-color: yellow;
+    }
+    #articoli{
+        margin: 20px auto;
+        width: 96%;
+    }
+}
+/*
+    sostituire h1 con un logo che dovrà essere centrato
+    centrare il menù 
+*/
+/* aggiungere una immagine in ogni articolo
+inserire un banner (immagine) tra il menù e gli articoli panoramico (largo 100%), alto 250px  */

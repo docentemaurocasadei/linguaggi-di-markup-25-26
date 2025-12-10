@@ -1,0 +1,18 @@
+nav ul li {
+    display: inline;
+}
+nav ul li:first-child{
+    background-color: hotpink;
+}
+nav ul li{
+    padding: 0.5em
+}
+nav ul li:first-child a{
+    color: white;
+}
+nav ul li a:hover{
+    color: green;
+}
+nav ul li a:visited{
+    color: gray;
+}

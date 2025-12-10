@@ -1,0 +1,20 @@
+body{
+    background-image: url('icon.svg');
+    background-size: .5em;
+    background-repeat: repeat;
+}
+@media screen and (min-width: 760px) {
+   body{
+        background-size: .7em;
+   }
+}
+
+
+/* secondo esercizio */
+section{
+    width: 80%;
+    min-height: 40%;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 5% auto;
+    padding: 5%;
+}

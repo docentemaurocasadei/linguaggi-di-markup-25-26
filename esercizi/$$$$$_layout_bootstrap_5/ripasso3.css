@@ -1,0 +1,49 @@
+#background{
+    background-image: url(../lezione10/img5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top:0;
+    height: 30rem;;
+    width: 100%;
+    z-index: 0;
+    background: linear-gradient(180deg, #f2072b 0%, #ffffff 100%);
+}
+
+#barra{
+    background-color: white;
+}
+ul li{
+    display: inline-block;
+}
+.fs-10{
+    font-size: 10px;
+}
+#title{
+    z-index: 2;
+    position: relative;
+}
+#card h3{
+    font-size: 4em;
+}
+.rounded-lg{
+    border-radius: 20px;
+}
+.border-start{
+    border-left-width:0 !important;
+}
+.mh-25{
+    min-height: 250px;
+}
+.colorgr{
+    background: linear-gradient(180deg, #ffffff 0%, #f2072b 100%)
+}
+@media screen and (min-width:576px) {
+    .border-sm-top-0{
+        border-top: 0 !important;
+    }
+    .border-start{
+        border-left-width:1px !important ;
+    }
+}

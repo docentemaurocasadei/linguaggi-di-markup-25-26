@@ -1,0 +1,152 @@
+html{
+    font-family: 'Roboto', sans-serif;
+}
+section#header{
+    background-color: #33658A;
+    overflow: auto;
+}
+div#contact a{
+    color: white;
+    padding: .3rem;
+}
+div#contact a:nth-child(1){
+    float: left;
+}
+div#contact a:nth-child(2){
+    float: right;
+}
+.container{
+    width: 95%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+#menu{
+    background-color: #86BBD8;
+    position: sticky;
+    top:0;
+    border-bottom: 1px solid black;
+}
+#menu div{
+    width: 100px;
+    display: inline-block;
+    margin: 0 auto;
+}
+#menu ul{
+    padding: .8rem 2rem;
+    width: 250px;
+    /* display: inline-block; */
+    margin: 0 auto;
+    text-align: center;
+}
+#menu ul li{
+    list-style-type: none;
+    display: inline;
+}
+#menu ul li a{
+    color: white;
+}
+#azienda > div{
+    border: 1px solid #33658A;
+    border-radius: 4px;
+    padding: .5rem;
+    color: white;
+}
+#azienda > div:nth-child(2n){
+    background-color: #2F4858;
+}
+#azienda > div:nth-child(2n+1){
+    background-color: #F6AE2D;
+}
+section#azienda header,
+section#azienda p{
+    margin: 1rem;
+}
+section#azienda a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+section#azienda header h3{
+    font-size: 28px;
+    text-transform: uppercase;
+}
+#azienda > div{
+    margin: 1rem 0rem;
+    padding: .5rem 0rem;
+}
+.button{
+    border-radius: 3px;
+    border: 1px solid white;
+    padding: .5em;
+}
+h2{
+    font-size: 36px;
+    text-transform: uppercase;
+    margin: 2rem;
+}
+#motto{
+    padding: 6rem;
+    background-image: url(./banner.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+#motto h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-size: 32px;
+    z-index: 1;
+    position: relative;
+}
+#motto div{
+    background-color: rgba(0, 0, 0, 0.646);
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#team{
+
+}
+
+footer{
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #2F4858;
+}
+footer small{
+    color: white;
+}
+#team img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+@media screen and (min-width:576px) {
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+    #azienda > div,
+    #team > article{
+        width: 47%;
+        display: inline-block;
+    }
+    
+}
+@media screen and (min-width:768px) {
+    .container{
+        width: 80%;
+        margin: 0 auto;
+    }
+    #azienda > div,
+    #team > article{
+        width: 30%;
+    }
+        
+}

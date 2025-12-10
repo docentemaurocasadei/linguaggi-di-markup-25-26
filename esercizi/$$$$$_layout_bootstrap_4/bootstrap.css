@@ -1,0 +1,13 @@
+#carouselExampleIndicators {
+    max-height: 20em;
+}
+.carousel-inner, .carousel-item {
+    height: 300px;
+    width: 100%;
+}
+.carousel-inner img {
+    object-fit: cover;
+    object-position: 80% 80%;
+    height: 100%;
+    width: 100%;
+}

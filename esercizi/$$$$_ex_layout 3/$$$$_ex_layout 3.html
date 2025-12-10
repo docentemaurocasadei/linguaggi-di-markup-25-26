@@ -1,0 +1,124 @@
+<!-- realizzare un layout come da immagini mobile e desktop -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Lezione 10</title>
+</head>
+<body>
+     <section id="logo">
+        <img src="./logo.svg" alt="">
+     </section>
+     <nav id="top-menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Storia</a></li>
+            <li><a href="#">Contatti</a></li>
+        </ul> 
+     </nav>
+
+     <section id="azienda" class="container">
+         <div id="testo-azienda">
+             <h2>Da oltre 30 anni sul mercato</h2>
+             <p>industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letr</p>
+         </div>
+         <div id="immagine-azienda">
+            <img src="./azienda.jpg" alt="">
+         </div>
+     </section>
+     <!-- impostare una altezza 180px alla section motto
+     la section dovrà essere al 100% del contenitore
+     la section dovrà avere una immagine di background
+     sopra al background dovrà essere presente una pellicola scura
+     il titolo dovrà apparire in modo centrato sia verticalmente
+     che orizzontalmente nel suo contenitore (utilizzare: display:flex, 
+     justify-content: center, align-items: center)
+     il titolo deve essere color white
+     impostare al #motto un margin-top + bottom di 16px 
+    
+    seconda parte:
+        creare una sezione servizi 
+        titolo h2 servizi.d
+        denro la sezione inserire 4 elementi composti (ognuno) da
+        1 icona centrata
+        1 titolo nome del servizio (h3)
+        1 testo sotto l'icona di 5 righe
+        1 pulsante "scopri di più"
+        su mobile farli disporre su column
+        su desktop farmi disporre su row
+    -->
+     
+     <section id="motto">
+         <h2>Insieme per dare il massimo</h2>
+         <div class="pellicola"></div>
+     </section>
+     <section id="servizi" class="container">
+        <h2 class="section">I Nostri Servizi</h2>
+        <section id="servizi-article"> <!-- display: flex -->
+            <article class="servizio">
+                <i class="fas fa-broom fa-3x"></i>
+                <header>
+                    <h3>Pulizia Ambientale</h3>
+                </header>
+                <p>
+                    La sanificazione ambientale è un'operazione mirata ad eliminare a fondo qualsiasi batterio ed agente contaminante che, con le comuni pulizie e detersioni, non è possibile rimuovere.
+                </p>
+                <button>Scopri di più</button>
+            </article>
+            <article class="servizio">
+                <i class="fas fa-dolly fa-3x"></i>
+                <header>
+                    <h3>Traslochi</h3>
+                </header>
+                <p>
+                    La sanificazione ambientale è un'operazione mirata ad eliminare a fondo qualsiasi batterio ed agente contaminante che, con le comuni pulizie e detersioni, non è possibile rimuovere.
+                </p>
+                <button>Scopri di più</button>
+            </article>
+            <article class="servizio">
+                <i class="fas fa-hand-sparkles fa-3x"></i>
+                <header>
+                    <h3>Sanificazione</h3>
+                </header>
+                <p>
+                    La sanificazione ambientale è un'operazione mirata ad eliminare a fondo qualsiasi batterio ed agente contaminante che, con le comuni pulizie e detersioni, non è possibile rimuovere.
+                </p>
+                <button>Scopri di più</button>
+            </article>
+            <article class="servizio">
+                <i class="fas fa-truck-loading fa-3x"></i>
+                <header>
+                    <h3>Facchinaggio</h3>
+                </header>
+                <p>
+                    La sanificazione ambientale è un'operazione mirata ad eliminare a fondo qualsiasi batterio ed agente contaminante che, con le comuni pulizie e detersioni, non è possibile rimuovere.
+                </p>
+                <button>Scopri di più</button>
+            </article>
+        </section>
+    </section>
+    <section id="gallery" class="container">
+        <h2 class="section">Gli Uffici</h2>
+        <div id="grid-1">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </section>
+    <footer id="footer">
+        copyright by Mauro
+    </footer>
+</body>
+</html>

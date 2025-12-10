@@ -1,0 +1,48 @@
+<!-- 
+    creare una section con un p e all'interno un testo e:
+    - impostare un background verde chiaro alla section
+    - impostare alla section un margine inferiore 1em
+    - impostare al p un padding 1em in tutte le direzioni
+    - impostare un background azzurro chiaro alla section
+    - impostare al p un margine
+        - alto e basso 15px
+        - sinistro e destro 10%
+    - mettere al p una proprietà border: 3px dotted black
+
+visualizzare il risultato
+    
+    - impostare u padding al p di 1em in tutte le direzioni
+
+altro esercizio
+    - impostare un max-width:90% alla section (con una classe)
+    - impostare un max-width:80% alla section su mediaquery >760px (con una classe)
+    - mettere la section centrata nella pagina
+
+altro esercizio
+    - duplicare la section e alla seconda section attribuire un box-sizing: border-box
+
+visualizzare il risultato
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <link rel="stylesheet" href="./box-model.css">
+</head>
+<body>
+    <section class="container">
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+    </section>
+    <section class="container border-box">
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+    </section>
+</body>
+</html>

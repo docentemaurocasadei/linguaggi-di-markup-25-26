@@ -1,0 +1,47 @@
+ul li{
+    list-style-type: none;
+}
+.myform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#payoff{
+    background-image: url('./sfondo.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+#payoff h2{
+    position: relative;
+    z-index: 1;
+}
+.pellicola{
+    background-color: rgba(0, 0, 0, 0.704);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* z-index: 1; */
+}
+#socket{
+    background-color: #232222;
+    color: white;
+}
+@media screen and (min-width: 576px) {
+    #cta{
+        background-color: yellowgreen;
+    }
+}
+@media screen and (min-width: 768px) {
+    #cta{
+        background-color: green;
+    }
+    .myform{
+        flex-direction: row;
+        align-items: center;
+    }
+    
+}

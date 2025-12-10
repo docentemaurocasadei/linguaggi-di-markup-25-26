@@ -1,0 +1,60 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+#gallery {
+    display: grid;
+    width: 90%;
+    margin: 0px auto;
+    grid-template-columns: 100%;
+    grid-gap:10px;
+}
+#gallery div {
+    background-position: center;
+    background-size: cover;
+    min-height: 100px;
+}
+#primo {
+    background-image: url('./gallery1.jpg');
+}
+#secondo {
+    background-image: url('./gallery2.jpg');
+}
+#terzo {
+    background-image: url('./gallery3.jpg');
+}
+#quarto {
+    background-image: url('./gallery4.jpg');
+}
+#quinto {
+    background-image: url('./gallery5.jpg');
+}
+#sesto {
+    background-image: url('./gallery6.jpg');
+}
+#settimo {
+    background-image: url('./gallery7.jpg');
+}
+
+h1{
+    text-align: center;
+}
+
+@media screen and (min-width: 576px) {
+    #gallery {
+        width: 80%;
+        min-height: 500px;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+    #primo {
+        grid-column: span 2;
+    }
+    #quinto {
+        grid-column: span 2;
+    }
+    #sesto {
+        grid-row: span 2;
+    }
+    #settimo {
+        grid-column: span 3;
+    }
+}

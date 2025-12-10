@@ -1,0 +1,95 @@
+/* ===================
+   Palette colori
+=================== */
+:root {
+    --colore-primario: #3A6EA5;
+    --colore-secondario: #F2F5F7;
+    --colore-accento: #FFD447;
+}
+
+/* ===================
+   Font globali
+=================== */
+html {
+    font-family: Arial, sans-serif;
+}
+
+/* Font custom */
+.font-menu {
+    font-family: "Kedebideri", sans-serif;
+}
+.font-testo {
+    font-family: "Kedebideri", sans-serif;
+}
+
+/* ===================
+   Menu principale
+=================== */
+nav#menu-principale {
+    background-color: var(--colore-primario);
+}
+
+nav#menu-principale ul {
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav#menu-principale li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav#menu-principale a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+}
+
+/* ===================
+   Contenuto principale
+=================== */
+main {
+    margin-top: 1.5rem;
+}
+
+section#servizi {
+    background-color: var(--colore-secondario);
+    padding: 1rem;
+    max-width: 90%;
+    margin: 0 auto;
+    font-size: 0; /* eliminazione spazio inline-block */
+}
+
+section#servizi > article {
+    display: inline-block;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    vertical-align: top;
+    font-size: initial;
+    text-align: center;
+}
+
+h2 {
+    color: var(--colore-primario);
+}
+
+/* evidenza */
+p span[data-evidenza="giallo"] {
+    background-color: var(--colore-accento);
+    font-weight: bold;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+/* ===================
+   Layout responsive
+=================== */
+@media screen and (min-width: 768px) {
+    section#servizi > article {
+        width: 32%;
+    }
+}

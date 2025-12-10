@@ -1,0 +1,24 @@
+section{
+    background-color: lightgreen;
+    padding: 1em;
+    margin-bottom: 15px;
+}
+section p{
+    background-color: lightskyblue;
+    border: 3px dotted black;
+    margin: 15px 10%;
+    padding: 1em;
+}
+.container{
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.border-box{
+    box-sizing: border-box;
+}
+@media screen and (min-width: 760px) {
+    .container{
+        max-width: 80%;
+    }
+}

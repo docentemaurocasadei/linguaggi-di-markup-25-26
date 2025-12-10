@@ -1,0 +1,117 @@
+:root{
+    --principale:#2C5784;
+}
+html, *{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.bg-principale{
+    background-color: var(--principale);
+}
+.bg-principale a{
+    color: white;
+}
+nav ul{
+    margin: 0 auto;
+    display: block;
+    max-width: 20rem;
+    padding: .5rem;
+    text-align: center;
+}
+nav ul li{
+    display: block;
+    color: white;
+}
+#logo{
+    text-align: center;
+}
+.caratteristica-esterna{
+    padding: 1em;
+}
+.caratteristica{
+    display: grid;
+    grid-row: 1fr 3fr 1fr;
+    /* border: 1px solid var(--principale); */
+    border-radius: 3px;
+    text-align: center;
+}
+.caratteristica a{
+    display: block;
+    background-color:  var(--principale);
+    color: white;
+    padding: .5rem;
+    margin: 6px;
+    border-radius: 5px;
+}
+#payoff{
+    text-align: center;
+    background-image: url(./banner.jpg);
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.payoff-text{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    position: relative;
+}
+#payoff h2{
+    color: white;
+    font-size: larger;
+}
+.pellicola{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.676);
+    z-index: 0;
+}
+#gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, minmax(1, 5fr));
+    margin: 2rem auto;
+    width: 80%;
+    overflow: auto;
+}
+#gallery img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+footer{
+    background-color: var(--principale);
+    color: white;
+    min-height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (min-width: 576px) {
+    nav ul li{
+        display: inline;
+    }
+    #caratteristiche{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #gallery{
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: repeat(3, minmax(0, .5fr));
+    }
+    #gallery img:nth-child(2){
+        grid-column: span 2;
+    }
+    #gallery img:nth-child(6){
+        grid-column: span 3;
+        grid-row: span 1;
+    }
+}

@@ -1,0 +1,54 @@
+body{
+    margin: 0px
+}
+nav{
+    padding:2px
+}
+nav#nav-menu ul li{
+    display: inline;
+}
+#nav-menu{
+    background-color:rgb(255,183,77);
+}
+#logo{
+    margin: 20px auto;
+    display: block;
+    max-width: 250px;
+}
+
+#nav-menu{
+    text-align: center;
+}
+.container{
+    margin: 20px auto;
+    width: 80%;
+    font-size: 0px;
+}
+#colsx-azienda,#coldx-azienda{
+    width:50%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+img{
+    width:100%;
+}
+#mission{
+    min-height: 200px;
+}
+#mission h2{
+    text-align: center;
+}
+@media screen and (max-width:768px){
+    nav#nav-menu ul li{
+        display: block;
+    }
+    #colsx-azienda,#coldx-azienda{
+        width:100%;
+    }
+    .container{
+        width: 90%;
+    }
+}

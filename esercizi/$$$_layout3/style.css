@@ -1,0 +1,176 @@
+*{
+    font-family: 'Lato', sans-serif;
+}
+#riferimenti{
+    border-bottom: 1px solid #999999;
+    overflow: auto;
+    padding: 5px 1em;
+    font-size: 9px;
+}
+#rif-tel{
+    float: left;
+}
+#rif-wha{
+    float: right;
+}
+#menu-principale{
+    text-align: center;
+    padding: 5px;
+    background-color: #0097A7;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0px 1px 3px #000000;
+}
+.text-center{
+    text-align: center;
+}
+.text-shadow{
+    text-shadow: 2px 2px 2px #333333;
+}
+#position{
+    height: 300px;
+    position: relative;
+    display: none;
+}
+#position, #pos-rel, #pos-abs{
+    border: 1px solid black;
+}
+#position div:nth-child(1){
+    background-color: #FFA000;
+}
+#position div:nth-child(2){
+    background-color: #558B2F;
+}
+#position div{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+#pos-rel{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+}
+#pos-abs{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 1;
+}
+#motto{
+    min-height: 200px;
+    background-image: url('./sfondo2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+#motto h2{
+    color: white;
+    padding: 100px;
+    position: relative;
+    z-index: 1;
+    font-variant: small-caps;
+}
+.pellicola{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.651);
+    width: 100%;
+    height: 100%;
+    top:0;
+}
+.container{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+#gallery > div, #gallery1 > div{
+    background-image: url('./sfondo.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 80px;
+    border: 1px solid black;
+    margin: 2px;
+}
+#chat{
+    position: fixed;
+    right: 2em;
+    bottom: 2em;
+    color: lightgreen;
+    background-color: white;
+    border-radius: 25%;
+    padding: 5px;
+    cursor: pointer;
+    z-index: 10;
+}
+table,tr,td{
+    border: 1px solid black !important;
+    border-collapse: collapse !important;
+}
+.mt-10{
+    margin-top: 10px;
+}
+#servizi > div{
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+#gallery div:hover,#gallery1 div:hover{
+    animation-name: opacizza;
+    animation-duration: .5s;
+}
+@keyframes opacizza{
+    from{opacity: 1;}
+    100%{opacity: 0.4;}
+}
+@media screen and (min-width:576px) {
+    #motto h2{
+        text-decoration: overline;
+    }
+    #servizi{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #servizi > div{
+        max-width: 30%;
+    }
+    #servizi > div p {
+        text-align: justify;
+        margin: 8px 0px;
+    }
+    #gallery{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    #gallery div{
+        width: 48%;
+    }
+    #gallery1 {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+    #gallery1 div:nth-child(1){
+        grid-column: span 2;
+    }
+    #gallery1 div:nth-child(2),#gallery1 div:nth-child(3){
+        grid-row: span 2;
+    }
+    #gallery1 div:nth-child(7){
+        grid-column: span 3;
+    }
+    #news-primopiano p{
+        column-count: 4;
+        /* column-width: 200px; */
+        column-rule: 1px solid black;
+        text-align: justify;
+    }
+}

@@ -1,0 +1,14 @@
+article{
+    width: 48%;
+    border: 3px solid black;
+}
+#news article:nth-child(2){
+    float: left;
+}
+#news article:nth-child(1){
+    float: right;
+}
+span{
+    float: left;
+    clear: both;
+}

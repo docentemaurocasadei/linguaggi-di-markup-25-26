@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style2.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Delta Informatica</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            <a class="nav-link" href="#chi-siamo">Chi Siamo</a>
+            <a class="nav-link" href="#contatti">Contatti</a>
+        </div>
+        </div>
+    </div>
+    </nav>
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="./images/image1.jpg" class="d-block w-100" alt="spiaggia con palme">
+            </div>
+            <div class="carousel-item">
+            <img src="./images/image2.jpg" class="d-block w-100" alt="spiaggia con scogli">
+            </div>
+            <div class="carousel-item">
+            <img src="./images/image3.jpg" class="d-block w-100" alt="spiaggia di sabbia">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <section id="notizie" class="container mt-2 mt-md-4">
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Notizia 1</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                        <a href="#" class="btn btn-info">Scopri di Più</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Notizia 2</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                        <a href="#" class="btn btn-info">Scopri di Più</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Notizia 3</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                        <a href="#" class="btn btn-info">Scopri di Più</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="container-fluid mt-4 mt-md-5 bg-dark text-light">
+        <div class="row">
+            <!-- 
+                d-flex: attiva il flexbox
+                flex-column: imposta la direzione degli elementi in colonna
+                align-items-center: centra gli elementi orizzontalmente
+                align-items-md-start: allinea gli elementi a sinistra a partire da md
+            -->
+            <div id="footer-logo" class="col-12 col-md-4 d-flex flex-column align-items-center align-items-md-start">
+                <img src="./images/logo.png" alt="Logo Delta Informatica">
+                <p>Il tuo partner tecnologico di fiducia</p>
+            </div>
+            <div id="footer-vuoto" class="col-12 col-md-4"></div>
+            <div id="footer-nav" class="col-12 col-md-4 d-flex flex-column align-items-center pt-5">
+                <a href="#privacy-policy" class="text-light">Privacy Policy</a>
+                <a href="#cookie-policy" class="text-light">Cookie Policy</a>
+                <a href="#whistleblowing" class="text-light">Whistleblowing</a>
+            </div> 
+        </div>
+        <div class="row bg-info">
+            <div class="col-12">
+                <p class="text-center py-3 mb-0 text-dark">© Copyright 2025 Delta Informatica - Tutti i diritti riservati</p>
+            </div>
+        </div>
+        <!-- 2 righe
+         riga 1: 
+            x desktop
+            | LOGO             |            |  NAV          |
+                logo a sx (4 col)
+                sotto al logo il payoff
+                4 col vuote
+                4 col con nav e link a: privacy policy, cookie policy e whistleblowing 
+            x mobile
+            |   LOGO   |
+                logo centrato (12 col)
+                sotto al logo il payoff centrato
+                sotto 1 riga vuota
+                sotto la nav con i link centrati
+        riga 2: 
+            x desktop
+            socket ( copyright 2024 Delta Informatica - Tutti i diritti riservati ) centrato
+            x mobile
+            socket ( copyright 2024 Delta Informatica - Tutti i diritti riservati ) centrato
+        il tutto deve occupare tutta la larghezza della pagina e deve essere di 
+        background compatibile con la navbar del menù
+            -->
+
+    </footer>
+    <!-- <section class="container">
+        <h1 class="bg-primary">Hello, world!</h1>
+    </section>
+    <div class="container text-center">
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4">
+        Column 1
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+        Column 2
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+        Column 3
+        </div>
+    </div>
+    </div> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+nav ul li {
+    display: inline;
+}
+nav ul li{
+    padding: 0.5em
+}
+
+/* 2 esercizio */
+nav ul li:nth-child(even){
+    background-color: green;
+}
+nav ul li:nth-child(odd){
+    background-color: black;
+}
+nav ul li a{
+    color: white;
+}
+
+
+/* 3 esercizio */
+nav ul li a:not(.piccoli){
+    font-size: 1.5em;
+}

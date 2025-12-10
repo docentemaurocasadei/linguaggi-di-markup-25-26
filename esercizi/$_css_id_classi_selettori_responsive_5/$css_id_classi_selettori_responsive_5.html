@@ -1,0 +1,78 @@
+<!-- Realizza una pagina HTML e un file CSS esterno rispettando le seguenti indicazioni:
+La struttura della pagina deve usare i tag semantici:
+<header>, <nav>, <main>, <section>, <article>.
+
+Nel <nav> inserisci un menu orizzontale con tre voci:
+ome, Corsi, Contatti.
+
+Definisci una palette di colore utilizzando variabili CSS (:root):
+colore primario
+colore secondario
+colore di accento
+
+Importa da Google Fonts due font diversi.
+n font deve essere usato per il menu, l’altro per i contenuti.
+
+All'interno del <main> crea una sezione con id="servizi" contenente tre articoli:
+ogni articolo deve avere una immagine un titolo (<h2>) e un paragrafo;
+uno dei paragrafi deve avere una parte evidenziata usando un attributo personalizzato
+ata-evidenza="giallo" → colorare la frase in giallo.
+La sezione deve essere responsive:
+in mobile gli articoli devono essere uno sotto l’altro (100% width);
+su desktop (min-width: 768px) devono essere affiancati su una sola riga tramite display: inline-block.
+Organizza il CSS in modo ordinato e commentato. -->
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio - Layout a Tre Colonne</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kedebideri:wght@400;500;600" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav id="menu-principale">
+        <ul class="font-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Corsi</a></li>
+            <li><a href="#">Contatti</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="servizi" class="font-testo">
+
+        <article>
+            <img src="https://picsum.photos/400/300?random=1" alt="Immagine random">
+            <h2>Corso HTML & CSS</h2>
+            <p>Impara le basi della creazione di pagine web moderne e responsive.</p>
+        </article>
+
+        <article>
+            <img src="https://picsum.photos/400/300?random=2" alt="Immagine random">
+            <h2>Corso JavaScript</h2>
+            <p>Approfondisci la logica, gli eventi e la programmazione lato client per rendere il tuo sito dinamico.</p>
+        </article>
+
+        <article>
+            <img src="https://picsum.photos/400/300?random=3" alt="Immagine random">
+            <h2>Corso UX Design</h2>
+            <p>Progetta interfacce efficaci e studia il comportamento degli utenti.
+            <span data-evidenza="giallo">Questo è un modulo consigliato!</span>
+            </p>
+        </article>
+
+    </section>
+</main>
+
+</body>
+</html>

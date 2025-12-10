@@ -1,0 +1,35 @@
+div#myDiv{
+    background-color: cyan;
+    width: 300px;
+    height: 300px;
+}
+article a{
+    color: green;
+}
+.credits{
+    color: grey;
+}
+@media screen and (min-width:576px){
+    /*tablet + smartphone grandi*/
+    div#myDiv{
+        background-color: pink;
+        width: 300px;
+        height: 300px;
+    }   
+}
+@media screen and (min-width:768px) {
+    /*tablet + notebook piccoli*/
+    div#myDiv{
+        background-color: orange;
+        width: 300px;
+        height: 300px;
+    }   
+}
+@media screen and (min-width:992px) {
+    /*notebook + desktop*/
+    div#myDiv{
+        background-color: green;
+        width: 300px;
+        height: 300px;
+    }   
+}

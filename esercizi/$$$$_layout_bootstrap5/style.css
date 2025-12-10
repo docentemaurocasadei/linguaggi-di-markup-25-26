@@ -1,0 +1,35 @@
+#referenze{
+    /* background-color: #5C6BC0; */
+    /* color: white; */
+}
+#referenze div i ~ i{
+    margin-left: 1em;
+
+}
+#referenze div i + span{
+    display: none;
+
+}
+#slider, .carousel-inner, .carousel-item{
+    height: 300px;
+}
+#slider .carousel-item img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+#gallery img{
+    object-fit: cover;
+}
+@media screen and (min-width:576px) {
+    #referenze div i + span{
+        display: block;
+    }
+    .navbar ul li a{
+        text-align: end;
+    }           
+    #slider, .carousel-inner, .carousel-item{
+        height: 400px;
+    }
+    
+}

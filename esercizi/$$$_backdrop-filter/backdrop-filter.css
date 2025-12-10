@@ -1,0 +1,22 @@
+section{
+    width: 100%;
+    min-height: 500px;
+    background-image: url('./polynesia.jpg');
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section div {
+    max-width: 50%;
+    height: auto;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.383);
+    border-radius: 5px;
+    backdrop-filter: blur(4px);
+}
+p{
+    text-align: center;
+}

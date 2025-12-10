@@ -1,0 +1,104 @@
+/*
+display e proprietà di base
+creare un layout come da esempio sia desktop che mobile
+
+*/
+
+/* reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+    box-sizing: border-box;
+}
+/* fine reset */
+body{
+    font-family: 'Spline Sans', sans-serif;
+    margin: 0px;
+    
+}
+#riferimenti{
+    background-color: #689f38;
+    padding: 0.8em;
+    text-align: center;
+}
+#riferimenti ul {
+    margin: 0 auto;
+    display: inline-block;
+}
+#riferimenti ul li {
+    display: inline;
+}
+#riferimenti ul li a {
+    color: white;
+    margin-right: 20px ;
+}
+#hero img{
+    max-width: 100%;
+}
+#news {
+    font-size: 0px;
+}
+#news article img{
+    max-width: 100%;
+}
+#news article {
+    margin: 1rem 0.5rem;
+    padding: 0px 4px;
+    font-size:1rem; /*restore font size*/
+    vertical-align: top;
+}
+article h3{
+    font-weight: 900;
+    font-size: large;
+}
+
+@media screen and (min-width:768px){
+    #news article {
+        display: inline-block;
+        max-width: 25%;
+        margin: 0px;
+        padding: 0px 4px;
+        vertical-align: top;
+    }
+}
