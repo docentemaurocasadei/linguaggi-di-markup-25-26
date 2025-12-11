@@ -1,0 +1,9 @@
+o	Visual Studio Code, con le seguenti estensioni consigliate:
+	Live Share
+	Live Server
+	Bootstrap 5 Quick Snippets
+	HTML Boilerplate
+	HTML CSS Support
+	PHP Intelephense
+	Docker Extension per VS Code
+	GitLens
