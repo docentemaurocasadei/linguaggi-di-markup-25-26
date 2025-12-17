@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- questo è il meta description -->
+    <meta name="description" content="la descrizione 'forse' suggerita da mdr">
+    <link rel="shortcut icon" href="../lezione1/favicon.ico" type="image/x-icon">
+    <title>Lezione 2</title>
+</head>
+
+<body>
+    <h1 title="sono il titolo dell'h1" contenteditable id="top">Lezione 2</h1>
+    <h2>Argomenti trattati</h2>
+    <p lang="it" style="color: green" draggable="true">continuiamo con gli elementi ...</p>
+    <span onclick="console.log('ciao a tutti')">questo</span><span>è</span><span>in linea</span>
+    <h2>I colori</h2>
+    <p style="color: chartreuse">verde fluo</p>
+    <p style="color: #7FFF00">verde #7FFF00</p>
+    <p style="color: rgb(128, 255, 0)">verde rgb(128, 255, 0)</p>
+    <p style="color: hsl(90, 100%, 50%)">verde hsl(90, 100%, 50%)</p>
+    <p style="color: #5ABCB9" data-id="125">colore da coolors.co</p>
+    <span><strong>prima</strong> </span><br>
+    <span><em>parola</em></span>
+    <blockquote>
+        <p>Questo è un blocco di citazione.</p>
+        <p>Può contenere più paragrafi.</p>
+    </blockquote>
+    <code>
+        questo è un testo mostrato in courier new
+    </code>
+    <pre>
+        questo è un testo preformattato
+                a dx con spazi e a capo mantenuti
+    testo a sx
+    </pre>
+    H<sub>2</sub>O
+    Lorem <del>ipsum</del> dolor, <mark>sit amet</mark> consectetur
+    adipisicing <ins>elit</ins>. Corrupti, <small>repellat</small> commodi odio non libero expedita sunt. Autem dolorum
+    necessitatibus laboriosam quisquam culpa sit incidunt, excepturi praesentium illo exercitationem officia officiis.
+
+    il tag &lt;div&gt; crea un contenitore di blocco
+    Controls whether inputted text is automatically capitalized and, if so, in what manner.
+
+    autocorrect
+    Controls whether input text is automatically corrected for spelling errors. This can be applied to elements that
+    have editable text except for <input> elements with the attribute: type="password", type="email", or type="url".
+
+
+
+
+
+
+    &lt;script&gt;console.log('ti ho fregato');&lt;/script&gt;
+
+    <h2>Liste non ordinate (ul)</h2>
+    <ul style="list-style-type: square;">
+        <li>primo elemento</li>
+        <li>secondo elemento
+            <ul>
+                <li>elemento annidato 1</li>
+                <li>elemento annidato 2</li>
+            </ul>
+        </li>
+        <li>terzo elemento</li>
+    </ul>
+    <h2>Liste Ordinate (ol)</h2>
+    <ol style="list-style-type: lower-alpha;">
+        <li>primo elemento</li>
+        <li>secondo elemento
+            <ol>
+                <li>elemento annidato 1</li>
+                <li>elemento annidato 2</li>
+            </ol>
+        </li>
+        <li>terzo elemento</li>
+    </ol>
+    <h2>Liste di definizione (dl)</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+        <dt>JS</dt>
+        <dd>JavaScript</dd>
+    </dl>
+    <h2>Le Tabelle</h2>
+        <table border="1">
+            <caption>Tabella dei prodotti</caption>
+            <thead>
+                <tr>
+                    <th>Codice</th>
+                    <th>Categoria</th>
+                    <th>Descrizione</th>
+                    <th>Prezzo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td rowspan="2">Elettrodomestici</td>
+                    <td>Prodotto A</td>
+                    <td>10.00 €</td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Prodotto B</td>
+                    <td>15.50 €</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Accessori</td>
+                    <td>Prodotto C</td>
+                    <td>5.00 €</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Totale</td>
+                    <td>30.50 €</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <h2>Link</h2>
+        <!-- interni -->
+        <a href="../lezione1/lezione1.html">Lezione 1</a>
+        <a href="/lezioni/lezione1/lezione1.html">Lezione 1</a>
+        <a href="./lezione2.html">
+            <div>Lezione 2</div>
+        </a>
+        <!-- esterni -->
+        <a href="https://google.it" target="_blank" rel="nofollow">Google</a>
+        <a href="mailto:info@enaip.org">Inviami una email</a>
+        <a href="tel:+390412345678">Chiamami</a>
+        <a href="https://wa.me/+393331234567">WhatsApp</a>
+        <a href="https://t.me/+393331234567">Telegram</a>
+        <!-- attributo target -->
+        <!-- ancore (stessa pagina) -->
+        <a href="#top">Torna su</a>
+</body>
+
+</html>
