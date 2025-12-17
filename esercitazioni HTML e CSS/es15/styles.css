@@ -1,0 +1,14 @@
+ul, ol {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+ul li, ol li {
+    background-color: #ddd;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}

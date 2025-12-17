@@ -1,0 +1,14 @@
+/* Stile per una classe */
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Stile per un ID */
+#sezione {
+    background-color: lightblue;
+    padding: 20px;
+    border-left: 5px solid blue;
+}
