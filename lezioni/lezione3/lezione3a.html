@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lezione 3a</title>
+</head>
+<body>
+    <h1>I Form</h1>
+    <div>
+        <small>Registrati per rimanere aggiornato e ricevere le nostre offerte!</small>
+    </div>
+    <form action="http://localhost/linguaggi-di-markup-25-26/submit-form.php" method="POST">
+        <!-- fieldset è OPZIONALE -->
+        <fieldset>
+            <legend>Dati personali</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="cognome">Cognome:</label>
+            <input type="text" id="cognome" name="cognome" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="telefono">Telefono:</label>
+            <input type="tel" id="telefono" name="telefono">
+        </fieldset>
+        <h2>Interessi</h2>
+        <input type="checkbox" id="tennis" name="tennis" value="1" checked>
+        <label for="tennis">Tennis</label>
+        <input type="checkbox" id="calcio" name="calcio" value="1">
+        <label for="calcio">Calcio</label>
+        <input type="checkbox" id="ciclismo" name="ciclismo" value="1">
+        <label for="ciclismo">Ciclismo</label>
+        <input type="checkbox" id="nuoto" name="nuoto" value="1">
+        <label for="nuoto">Nuoto</label>
+        <br><br>
+        <h2>Preferenze</h2>
+        <label for="colore-preferito">Colore preferito:</label>
+        <input type="color" name="colore-preferito" id="colore-preferito">
+        <label for="numero-preferito">Numero preferito:</label>
+        <input type="number" name="numero-preferito" id="numero-preferito" min="1" max="100" step="1" value="50">
+        <br><br>
+        <h2>Nascita e Residenza</h2>
+        <label for="data-di-nascita">Data di nascita:</label>
+        <input type="date" name="data-di-nascita" id="data-di-nascita">
+        <br><br>
+        <input type="hidden" name="id-utente" value="12345">
+        <br><br>
+        <label for="mese-preferito">Mese Preferito</label>
+        <input type="month" name="mese-preferito" id="mese-preferito">
+        <br><br>
+        <h2>Accedi:</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required>
+        <h2>Genere</h2>
+        <input type="radio" name="genere" id="genere-m" value="M" checked>
+        <label for="genere-m">Maschile</label>
+        <input type="radio" name="genere" id="genere-f" value="F">
+        <label for="genere-f">Femminile</label>
+        <input type="radio" name="genere" id="genere-a" value="A">
+        <label for="genere-a">Altro</label>
+        <br><br>
+        <br><br>
+        <input type="submit" value="Registrati">
+        <input type="button" value="submit" onclick="this.form.submit()">
+        <button type="submit">Registrati 2</button>
+        <input type="reset" value="Resetta campi">
+    </form> 
+</body>
+</html>
