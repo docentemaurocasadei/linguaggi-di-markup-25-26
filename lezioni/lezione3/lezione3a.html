@@ -21,7 +21,7 @@
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
             <label for="telefono">Telefono:</label>
-            <input type="tel" id="telefono" name="telefono">
+            <input type="tel" id="telefono" name="telefono" readonly value="0541/121212">
         </fieldset>
         <h2>Interessi</h2>
         <input type="checkbox" id="tennis" name="tennis" value="1" checked>
@@ -41,7 +41,7 @@
         <br><br>
         <h2>Nascita e Residenza</h2>
         <label for="data-di-nascita">Data di nascita:</label>
-        <input type="date" name="data-di-nascita" id="data-di-nascita">
+        <input type="date" name="data-di-nascita" id="data-di-nascita" disabled value="1999-01-05">
         <br><br>
         <input type="hidden" name="id-utente" value="12345">
         <br><br>
@@ -50,7 +50,7 @@
         <br><br>
         <h2>Accedi:</h2>
         <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
+        <input type="text" id="username" name="username">
         <label for="password">Password:</label>
         <input type="password" name="password" id="password" required>
         <h2>Genere</h2>

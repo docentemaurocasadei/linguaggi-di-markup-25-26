@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lezione 4a tag semantici</title>
+</head>
+<body>
+    <header>
+        <hgroup>
+            <h1>Lezione 4a - Tag semantici HTML5</h1>
+            <h2>Nuovi elementi semantici per il contenuto</h2>
+        </hgroup>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="chi-siamo.html">Chi Siamo</a></li>
+            <li><a href="la-storia.html">La Storia</a></li>
+            <li><a href="contatti.html">Contatti</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="articoli-in-evidenza">
+            <article>
+                <h2>Articolo 1</h2>
+                <p>Questo è il contenuto del primo articolo in evidenza.</p>
+                <details>
+                    <summary>Riassunto dell'articolo 1</summary>
+                    <p>Questo è un riassunto dettagliato del primo articolo in evidenza.</p>
+                </details>
+            </article>
+            <article>
+                <h2>Articolo 2</h2>
+                <p>Questo è il contenuto del secondo articolo in evidenza.</p>
+                <details>
+                    <summary>Riassunto dell'articolo 2</summary>
+                    <p>Questo è un riassunto dettagliato del secondo articolo in evidenza.</p>
+                </details>
+            </article>
+            <article>
+                <h2>Articolo 3</h2>
+                <p>Questo è il contenuto del terzo articolo in evidenza.</p>
+                <details>
+                    <summary>Riassunto dell'articolo 3</summary>
+                    <p>Questo è un riassunto dettagliato del terzo articolo in evidenza.</p>
+                </details>
+            </article>
+        </section>
+        <section id="clienti">
+            <label for="reviews">Recensioni Clienti</label>
+            <meter value="9" min="0" max="10"></meter>
+            <p>Valutazione media: 9 su 10</p>
+        </section>
+        <section id="meteo">
+            <!-- Inizio codice ilMeteo.it -->
+            <iframe width="400" height="252" scrolling="no" frameborder="no" noresize="noresize" src="https://www.ilmeteo.it/box/previsioni.php?citta=5740&type=day1&width=400&ico=1&lang=ita&days=6&font=Arial&fontsize=12&bg=FFFFFF&fg=000000&bgtitle=0099FF&fgtitle=FFFFFF&bgtab=F0F0F0&fglink=1773C2"></iframe>
+            <!-- Fine codice ilMeteo.it -->
+        </section>
+        <section id="videogallery">
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/5iGJGe_pwZU?si=pGM7cpPPUKPTtcL7&amp;start=20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+    </main>
+    <footer>
+        <section id="footer-info">
+            <img src="./logo.png" alt="Logo Azienda" style="max-width: 80px;">
+            <p>Delta Informatica s.r.l. &#128512;</p>
+            <address>Via Roma 123, 00100 Roma, Italia</address>
+        </section>
+        <section id="socket">
+            <small>© 2025 Delta Informatica s.r.l. Tutti i diritti riservati.</small>
+            | <small>Partita IVA: 12345678901</small>
+            | <small>Rea: RM-123456</small>
+            | <a href="https://webagency.it">developed by WA</a>
+        </section>
+    </footer>
+</body>
+</html>
