@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Esempio Layout HTML5</title>
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <ul>
+            <li><a href="#ultime-notizie">Notizie</a></li>
+            <li><a href="#contatti">Contatti</a></li>
+            <li><a href="#storia">La Storia</a></li>
+        </ul>
+    </nav>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Benvenuti nel nostro sito</h1>
+        <p>Layout HTML5 senza CSS</p>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- SEZIONE ULTIME NOTIZIE -->
+        <section id="ultime-notizie">
+            <h2>Ultime Notizie</h2>
+
+            <article>
+                <h3>Notizia 1</h3>
+                <p>Testo della prima notizia.</p>
+            </article>
+
+            <article>
+                <h3>Notizia 2</h3>
+                <p>Testo della seconda notizia.</p>
+            </article>
+
+            <article>
+                <h3>Notizia 3</h3>
+                <p>Testo della terza notizia.</p>
+            </article>
+
+            <article>
+                <h3>Notizia 4</h3>
+                <p>Testo della quarta notizia.</p>
+            </article>
+        </section>
+
+        <!-- SEZIONE EMOJI -->
+        <section id="emoji">
+            <h2>Emoji</h2>
+
+            <table border="1">
+                <tr>
+                    <td>😀</td>
+                    <td>😂</td>
+                    <td>😍</td>
+                    <td>😎</td>
+                    <td>🤖</td>
+                </tr>
+                <tr>
+                    <td>🍎</td>
+                    <td>🍕</td>
+                    <td>🍔</td>
+                    <td>🍰</td>
+                    <td>☕</td>
+                </tr>
+                <tr>
+                    <td>⚽</td>
+                    <td>🏀</td>
+                    <td>🎾</td>
+                    <td>🏓</td>
+                    <td>🏊</td>
+                </tr>
+                <tr>
+                    <td>🚗</td>
+                    <td>✈️</td>
+                    <td>🚀</td>
+                    <td>🚲</td>
+                    <td>🛴</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- SEZIONE CONTATTI -->
+        <section id="contatti">
+            <h2>Contatti</h2>
+
+            <form action="http://localhost/contatti.php" method="post">
+
+                <p>
+                    <label for="nominativo">Nominativo:</label><br>
+                    <input type="text" id="nominativo" name="nominativo" required>
+                </p>
+
+                <p>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </p>
+
+                <p>
+                    <label for="telefono">Telefono:</label><br>
+                    <input type="tel" id="telefono" name="telefono">
+                </p>
+
+                <p>
+                    <label for="messaggio">Messaggio:</label><br>
+                    <textarea id="messaggio" name="messaggio" rows="5" cols="30"></textarea>
+                </p>
+
+                <p>
+                    <button type="submit">Invia</button>
+                </p>
+
+            </form>
+        </section>
+
+        <!-- SEZIONE STORIA -->
+        <section id="storia">
+            <h2>La nostra Storia</h2>
+
+            <ul>
+                <li>2005 – Fondazione dell'azienda</li>
+                <li>2008 – Prima presenza nel mercato tedesco</li>
+                <li>2010 – Apertura nuova sede</li>
+                <li>2014 – Lancio del primo prodotto digitale</li>
+                <li>2018 – Espansione europea</li>
+                <li>2022 – Innovazione e nuovi servizi</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            <img src="logo.png" alt="Logo aziendale">
+        </p>
+
+        <p>
+            <a href="sitemap.php">Sitemap</a> |
+            <a href="privacy-policy.php">Privacy Policy</a> |
+            <a href="cookie-policy.html">Cookie Policy</a>
+        </p>
+    </footer>
+
+    <!-- SOCKET -->
+    <div id="socket">
+        <p>
+            Credits:
+            <a href="https://www.webagency.it" target="_blank">
+                Web Agency
+            </a>
+        </p>
+    </div>
+
+</body>
+</html>
