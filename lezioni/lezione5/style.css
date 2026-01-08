@@ -1,12 +1,18 @@
+:root{
+    --colore-primario: #9d6754;
+    --colore-secondario: #adbabd;
+    --colore-info: #5a5766;
+    --size-font-base: 16px;
+}
 /* mobile first */
 html {
-    font-size: 20px;
+    font-size: var(--size-font-base);
 }
 h1 {
-    color: palegreen;
+    color: var(--colore-primario);
 }
 h3 {
-    color: rgb(85, 124, 25);
+    color: var(--colore-secondario);
 }
 #primo {
     color: gray;
@@ -18,12 +24,12 @@ h2.importante {
     color: purple;
 }
 h2 {
-    color: red;
+    color: var(--colore-secondario);
 }
 * {
-    color: blueviolet;
+    color: var(--colore-info);
 }
-li.menu{
+nav#menu-principale li{
     font-size: 1.5rem;
     font-weight: bold;
     font-family: 'Lucida Sans';
@@ -32,10 +38,40 @@ li.menu{
 }
 li#selected{
     text-decoration: underline;
-    color: darkorange;
+    color: var(--colore-primario);
+}
+article ul > li{
+    color: var(--colore-secondario);
+}
+article ul li + li{
+    color: teal;
+}   
+ul li ~ li{
+    text-decoration: overline;
 }
 
-
+table td, table th {
+    border: 1px solid black;
+    padding: 0.5rem;
+}
+table th {
+    background-color: lightgray;
+}
+#titoli-fratelli h2 + h2 {
+    border: 2px solid blue;
+}
+#titoli-fratelli h2 ~ h2 {
+    background-color: lightblue;
+}
+div[lang="en"] {
+    font-style: italic;
+}
+div[lang="it"] {
+    text-decoration: wavy underline;
+}
+div[lang]{
+    font-size: 1.5rem;
+}
 @media (min-width: 576px) { 
     h2 {
         color: orange;

@@ -1,0 +1,17 @@
+#scacchiera div.riga div{
+    display: inline-block;
+}
+#scacchiera div.riga{
+    width: 100%;
+}
+#scacchiera div.bianco, #scacchiera div.nero{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+}
+.bianco {
+    background-color: white;
+}
+.nero {
+    background-color: black;
+}
