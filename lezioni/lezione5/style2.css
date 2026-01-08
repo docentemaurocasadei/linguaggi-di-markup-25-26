@@ -1,0 +1,19 @@
+/* desktop first */
+h2 {
+    color: yellow;
+}
+@media (max-width: 1199.98px) { 
+    h2 {
+        color: green;
+    }
+}
+@media (max-width: 991.98px) { 
+    h2 {
+        color: orange;
+    }
+}
+@media screen and (max-width: 575.98px) { 
+    h2 {
+        color: red;
+    }
+}

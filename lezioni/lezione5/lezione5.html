@@ -3,9 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lezione 5</title>
+    <title>Lezione 5 CSS</title>
+    <style>
+        /* @import url('style.css'); */
+        /* html {
+            font-size: 20px;
+        }
+        h1 {
+            color: pink;
+        }
+        h3 {
+            color: greenyellow;
+        }
+        h2 {
+            color: red;
+        } */
+    </style>
+    <link rel="stylesheet" href="style.css">
+
 </head>
-<body>
-    
+<body style="font-size: 16px">
+    <!-- <h1 style="color: aqua;">Titolo Principale</h1>
+    <h2>Sottotitolo</h2>
+    <h3 style="border: 0.5rem dashed purple;">Terzo Titolo</h3>
+    <h4>Quarto Titolo</h4> -->
+    <h1>Specificità</h1>
+    <h2 class="importante" id="primo">Sottotitolo con id e class</h2>
+    <h2 class="importante">Sottotitolo con class</h2>
+    <h2>Sottotitolo senza id e senza class</h2>
+    <h4 class="importante">Quarto Titolo</h4>
+    <nav>
+        <ul>
+            <li class="menu"  id="selected">Home</li>
+            <li class="menu">Chi Siamo</li>
+            <li class="menu">Contatti</li>
+        </ul>
+    </nav>
+    <section id="primo-piano">
+        <article>
+            <p>
+                <ul>
+                    <li>punto primo</li>
+                    <li>punto secondo</li>
+                    <li>punto terzo</li>
+                </ul>
+            </p>
+        </article>
+    </section>
 </body>
 </html>

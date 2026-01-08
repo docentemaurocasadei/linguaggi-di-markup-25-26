@@ -1,0 +1,56 @@
+/* mobile first */
+html {
+    font-size: 20px;
+}
+h1 {
+    color: palegreen;
+}
+h3 {
+    color: rgb(85, 124, 25);
+}
+#primo {
+    color: gray;
+}
+.importante {
+    color: brown;
+}
+h2.importante {
+    color: purple;
+}
+h2 {
+    color: red;
+}
+* {
+    color: blueviolet;
+}
+li.menu{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Lucida Sans';
+    display: inline;
+    margin-right: 1rem;
+}
+li#selected{
+    text-decoration: underline;
+    color: darkorange;
+}
+
+
+@media (min-width: 576px) { 
+    h2 {
+        color: orange;
+    }
+    #primo {
+        color: rgb(39, 37, 37);
+    }
+}
+@media (min-width: 992px) { 
+    h2 {
+        color: green;
+    }
+}
+@media (min-width: 1200px) { 
+    h2 {
+        color: yellow;
+    }
+}
