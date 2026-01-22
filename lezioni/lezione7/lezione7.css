@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+section#pseudo-classi div:nth-child(3) {
+    box-sizing: border-box;
+}
+section#pseudo-classi div:nth-child(4) {
+    box-sizing: content-box;
+}
+div {
+    width: 10em;
+    height: 10em;
+    border: 5px dashed orange;
+    display: inline-block;
+    padding: 2em;
+    text-align: justify;
+    margin: 1em;
+    background-color: limegreen;
+    /* overflow: visible; */
+}
+div:hover {
+    background-color: lightgray;
+}
+section#pseudo-classi div:first-child {
+    background-color: lightblue;
+}
+section#pseudo-classi p:first-child::first-letter {
+    font-size: 200%;
+    color: red;
+    font-weight: bold;
+}
+a:link{
+    color: green;
+}
+a:active{
+    color: red;
+}
+a:visited{
+    color: pink;
+}
+nav#footer a {
+    display: inline-block;
+}
+nav#footer a:nth-child(1) {
+    font-weight: bold;
+    font-size: 300%;
+}
+nav#footer a:nth-last-child(1) {
+    border: 3px solid pink;
+}
+/*
+even=pari
+odd=dispari
+*/
+/* table.table-striped tr:nth-child(even) {
+    background-color: lightgray;
+} */
+table.table-striped tr:nth-child(2n+3) {
+    background-color: lightgray;
+}
+table tr:first-child {
+    background-color: lightgreen;
+}
+/* .riga-grigia {
+    background-color: lightgray;
+} */
+table.table-striped tr:hover:not(:first-child) {
+    background-color: green;
+    color: white;
+}
+/* input:enabled {
+    background-color: lightgreen;
+}
+input:disabled {
+    display: none;
+}
+input:disabled + label {
+    display: none;
+} */
+ input:checked {
+    accent-color: red;    
+}
+input:checked + label {
+    font-weight: bold;
+    color: red;
+}
+input:checked::before {
+    content: " ✔";
+    color: green;
+    margin-left: 12px;
+}
+a:hover::after {
+    content: "»";
+    font-size: 80%;
+    color: green;
+}
+img{
+    width: 100%;
+    max-width: 200px;
+    margin: 0.5em auto;
+    display: block;
+    border-radius: 5px;
+    border: 1px solid rgba(147, 144, 144, 0.573);
+    padding: 2px;
+}
+input{
+    /* outline: 5px solid lightblue; */
+}
