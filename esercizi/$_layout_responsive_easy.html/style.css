@@ -2,6 +2,7 @@ div#myDiv{
     background-color: cyan;
     width: 300px;
     height: 300px;
+    max-width: 100%;
 }
 article a{
     color: green;
