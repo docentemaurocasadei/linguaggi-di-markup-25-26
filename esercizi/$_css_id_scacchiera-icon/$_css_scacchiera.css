@@ -4,6 +4,9 @@
 #scacchiera div.riga div{
     display: inline-block;
 }
+#scacchiera div.riga div:hover{
+    background-color: salmon;
+}
 #scacchiera div.riga{
     width: 100%;
 }
