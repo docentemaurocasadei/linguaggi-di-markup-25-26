@@ -5,7 +5,7 @@ div#myDiv{
     max-width: 100%;
 }
 article a{
-    color: green;
+    color: lab(46.23% -51.7 49.9);
 }
 .credits{
     color: grey;
