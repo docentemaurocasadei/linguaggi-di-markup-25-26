@@ -1,0 +1,35 @@
+/* .primo-div {
+box-sizing: border-box;
+} */
+/* .secondo-div {
+    box-sizing: content-box;
+} */
+.primo-div, .secondo-div, .terzo-div {
+    box-sizing: border-box;
+    width: 98%;
+    padding: .5rem;
+    border: 2px solid black;
+    display: inline-block;
+}
+section#header {
+    background-color: #1b9aaa;
+}
+section#header div, section#header a {
+    color: white;
+    display: inline-block;
+    padding: 1rem;
+}
+section#hero {
+    background-color: #F8FFE5;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    min-height: 300px;
+}
+@media screen and (min-width:768px) {
+    section#articoli div{
+        width: 32.9%;
+    }
+}
