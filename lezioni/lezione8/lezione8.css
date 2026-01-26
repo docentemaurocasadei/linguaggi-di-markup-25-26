@@ -4,6 +4,26 @@ box-sizing: border-box;
 /* .secondo-div {
     box-sizing: content-box;
 } */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+h1{
+  font-family: "Momo Signature", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.strike {
+    text-decoration: line-through;
+}
 .primo-div, .secondo-div, .terzo-div {
     box-sizing: border-box;
     width: 98%;
@@ -19,17 +39,104 @@ section#header div, section#header a {
     display: inline-block;
     padding: 1rem;
 }
+section#header .logo {
+    float: left;
+}
+section#header .contatti, section#header .telefono, section#header .ig {
+    float: right;
+}
+/* section#header .ig {
+    clear: right;
+} */
+section#header a{
+    padding: 0;
+}
+section#header {
+    overflow: auto;
+}
 section#hero {
-    background-color: #F8FFE5;
+    /* background-color: #F8FFE5; */
     color: white;
     text-align: center;
     padding: 2rem;
     font-size: 2rem;
     font-weight: bold;
     min-height: 300px;
+    background-image: url('./images/building_640.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    padding: .5em;
+    /* background-clip: content-box; */
+}
+.testo-ombreggiato{
+    text-shadow: 2px 1px 4px #000000;
+}
+section#articoli h3 {
+    text-transform: uppercase;
+}
+.sfondo1, .sfondo2, .sfondo3, .ninfea
+{ display: inline-block; background: url('./images/sprite.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
+ 
+.sfondo1 { background-position: -0px -0px; width: 1920px; height: 1280px; }
+.sfondo2 { background-position: -0px -1280px; width: 1920px; height: 1280px; }
+.sfondo3 { background-position: -0px -2560px; width: 1920px; height: 1280px; }
+.ninfea { background-position: -0px -3840px; width: 640px; height: 436px; }
+section#claim {
+    background-image: url('./images/sfondo-citta.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    background-attachment: fixed;
+}
+section#claim h2 {
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    font-size: 2.5rem;
+    position: relative;
+    z-index: 2;
+}
+.pellicola {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+#footer-content{
+    width: 100%;
+    background-color: #1b9aaa;
+    min-height: 10rem;
+}
+#footer-content div{
+    width: 100%;
+}
+#socket{
+    width: 100%;
+    background-color: #1b9aaa;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    font-size: 0.9rem;
+}
+#footer-content a, #footer-content div{
+    color: white;
+    padding: .8rem 0;
+    text-align: center;
 }
 @media screen and (min-width:768px) {
     section#articoli div{
         width: 32.9%;
     }
+    #footer-content div, #socket div{
+        width: 32%;
+        display: inline-block;
+        padding: 2rem;
+    }
+
 }
