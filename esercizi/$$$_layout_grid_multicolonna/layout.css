@@ -1,0 +1,57 @@
+
+* {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+h2{
+    text-align: center;
+    font-weight: 900;
+}
+#articoli img{
+    max-width: 100%;
+    border-radius: 3px;
+    border: 1px solid black;
+    padding: 3px;
+}
+#articoli article{
+    margin: .5rem;
+    text-align: center;
+}
+#articoli{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+#gallery{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+#gallery .item{
+    background-color: lightgreen;
+    min-height: 8em;
+}
+#editoriale{
+    columns: 1;
+}
+
+@media screen and (min-width: 576px){
+    #articoli{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .big{
+        grid-row: span 2;
+    }
+    .wide{
+        grid-column: span 2;
+    }
+    #editoriale{
+        columns: 3;
+        column-gap: 1rem;
+        column-rule: 1px solid black;
+    }
+}

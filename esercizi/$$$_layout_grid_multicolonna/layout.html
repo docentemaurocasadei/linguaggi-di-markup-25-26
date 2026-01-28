@@ -1,0 +1,117 @@
+<!-- 
+Esercizio: Layout responsive con CSS Grid e Columns
+
+Obiettivo
+Realizzare una pagina web responsive composta da:
+una sezione Articoli organizzata con CSS Grid
+una Gallery con elementi di dimensioni diverse usando l’unità fr
+una sezione Editoriale impaginata in colonne di testo
+
+Struttura HTML
+La pagina è composta da:
+un titolo principale per ogni sezione
+una sezione <section id="articoli"> contenente più <article> con titolo, immagine e testo
+una <div id="gallery"> con più elementi grafici
+una sezione <section id="editoriale"> con testo continuo
+(Il codice HTML è fornito e non va modificato nella struttura)
+
+Parte 1 – Sezione Articoli (CSS Grid)
+Su mobile gli articoli devono essere disposti in una sola colonna
+Da 576px in su, la griglia deve diventare a tre colonne
+Le immagini devono:
+adattarsi alla larghezza del contenitore
+avere bordo e angoli arrotondati
+Gli articoli devono avere spaziatura uniforme
+📌 Tecnologie usate
+display: grid
+grid-template-columns
+gap
+media query
+
+Parte 2 – Gallery con fr
+La gallery deve essere composta da 2 colonne uguali
+Alcuni elementi devono:
+occupare più righe (.big)
+occupare più colonne (.wide)
+Il layout deve adattarsi automaticamente allo spazio disponibile
+📌 Concetti chiave
+unità fr
+grid-row: span
+grid-column: span
+
+Parte 3 – Sezione Editoriale (CSS Columns)
+Su mobile il testo deve essere visualizzato in un’unica colonna
+Da 576px in su il testo deve essere diviso in tre colonne
+Deve essere presente:
+spazio tra le colonne
+una linea di separazione verticale
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="layout.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Momo+Signature&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h2>Articoli</h1>
+    <section id="articoli">
+        <article>
+            <h3>Articolo 1</h3>
+            <img src="./sfondo2.jpg" alt="">
+            <p>Questo è il contenuto del primo articolo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </article>
+        <article>
+            <h3>Articolo 2</h3>
+            <img src="./sfondo2.jpg" alt="">
+            <p>Questo è il contenuto del secondo articolo. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </article>
+        <article>
+            <h3>Articolo 3</h3>
+            <img src="./sfondo2.jpg" alt="">
+            <p>Questo è il contenuto del terzo articolo. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </article>
+    </section>
+    <h2>Gallery</h2>
+    <div id="gallery">
+        <div class="item big">
+            1. Lorem ipsum dolor sit amet.
+        </div>
+
+        <div class="item">
+            2. Lorem ipsum dolor sit amet.
+        </div>
+
+        <div class="item">
+            3. Lorem ipsum dolor sit amet.
+        </div>
+
+        <div class="item wide">
+            4. Lorem ipsum dolor sit amet.
+        </div>
+
+        <div class="item">
+            5. Lorem ipsum dolor sit amet.
+        </div>
+
+        <div class="item">
+            6. Lorem ipsum dolor sit amet.
+        </div>
+    </div>
+    <h2>Editoriale</h2>
+    <section id="editoriale">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates temporibus laborum, ab praesentium, architecto saepe quam adipisci sunt pariatur doloribus aut, nobis dicta vel aliquam assumenda ipsam tenetur amet velit?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates temporibus laborum, ab praesentium, architecto saepe quam adipisci sunt pariatur doloribus aut, nobis dicta vel aliquam assumenda ipsam tenetur amet velit?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates temporibus laborum, ab praesentium, architecto saepe quam adipisci sunt pariatur doloribus aut, nobis dicta vel aliquam assumenda ipsam tenetur amet velit?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates temporibus laborum, ab praesentium, architecto saepe quam adipisci sunt pariatur doloribus aut, nobis dicta vel aliquam assumenda ipsam tenetur amet velit?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates temporibus laborum, ab praesentium, architecto saepe quam adipisci sunt pariatur doloribus aut, nobis dicta vel aliquam assumenda ipsam tenetur amet velit?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates temporibus laborum, ab praesentium, architecto saepe quam adipisci sunt pariatur doloribus aut, nobis dicta vel aliquam assumenda ipsam tenetur amet velit?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates temporibus laborum, ab praesentium, architecto saepe quam adipisci sunt pariatur doloribus aut, nobis dicta vel aliquam assumenda ipsam tenetur amet velit?
+    </section>
+</body>
+</html>
