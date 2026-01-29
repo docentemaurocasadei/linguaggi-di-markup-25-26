@@ -137,7 +137,12 @@ button {
         object-fit: cover;
         object-position: center;
     }
-
+    #redazionale {
+        columns: 2;
+        column-gap: 2rem;
+        column-rule: 1px solid black;
+        text-align: justify;
+    }
 }
 @media screen and (min-width: 768px) {
     #primo-piano article {
@@ -148,6 +153,9 @@ button {
     }
     #gallery .image-gallery:nth-child(4),#gallery .image-gallery:nth-child(8)  {
         grid-column: span 2;
+    }
+    #redazionale {
+        columns: 3;
     }
 }
 @media screen and (min-width: 1200px) {
