@@ -1,0 +1,13 @@
+/* article img{
+    max-width: 100%;
+} */
+ .carousel-item{
+    height: 350px;
+    object-fit: cover;
+    object-position: bottom;
+ }
+ .carousel-item img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+ }

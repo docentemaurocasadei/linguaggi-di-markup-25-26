@@ -1,12 +1,115 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lezione 10</title>
-    <link rel="stylesheet" href="./lezione10.css">
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="lezione10.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logo.svg" alt="Bootstrap" width="30" height="24">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 ">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Azienda</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Contatti</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Servizi
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Web App</a></li>
+                    <li><a class="dropdown-item" href="#">Ecommerce</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Web APP</a></li>
+                </ul>
+                </li>
+            </ul>
+            <!-- <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="../lezione9/images/sfondo-citta.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+            <img src="../lezione9/images/sfondo-citta-chiaro.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+            <img src="../lezione9/images/sfondo-citta.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <h1 class="text-center display-5 text-decoration-underline my-1 my-sm-2 my-md-4">Hello, world!</h1>
+    <div class="d-block mx-auto w-25 text-center">sottotitolo</div>
+    <section class="container">
+        <div class="row text-center justify-content-evenly">
+            <article class="col-12 col-md-6 col-lg-4 order-2">
+                <h3>titolo 1</h3>
+                <img class="img-fluid"  src="../lezione9/images/building_1280.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quisquam saepe iure aut ea enim blanditiis perferendis quo. Esse, voluptatem atque. Eveniet laudantium inventore deleniti facere soluta vitae nisi quam.</p>
+            </article>
+            <article class="col-12 col-md-6 col-lg-4 order-1">
+                <h3>titolo 2</h3>
+                <img class="img-fluid" src="../lezione9/images/building_640.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quisquam saepe iure aut ea enim blanditiis perferendis quo. Esse, voluptatem atque. Eveniet laudantium inventore deleniti facere soluta vitae nisi quam.</p>
+            </article>
+            <article class="col-12 col-md-6 col-lg-4 order-3">
+                <h3>titolo 3</h3>
+                <img class="img-fluid" src="../lezione9/images/empire-state-building.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quisquam saepe iure aut ea enim blanditiis perferendis quo. Esse, voluptatem atque. Eveniet laudantium inventore deleniti facere soluta vitae nisi quam.</p>
+            </article>                        
+            <article class="col-12 col-md-6 col-lg-4 order-3">
+                <h3>titolo 4</h3>
+                <img class="img-fluid" src="../lezione9/images/sfondo-citta.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quisquam saepe iure aut ea enim blanditiis perferendis quo. Esse, voluptatem atque. Eveniet laudantium inventore deleniti facere soluta vitae nisi quam.</p>
+            </article>                        
+            <article class="col-12 col-md-6 col-lg-4 order-3">
+                <h3>titolo 5</h3>
+                <img class="img-fluid" src="../lezione9/images/sfondo-citta.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quisquam saepe iure aut ea enim blanditiis perferendis quo. Esse, voluptatem atque. Eveniet laudantium inventore deleniti facere soluta vitae nisi quam.</p>
+            </article>                        
+        </div>
+    </section>
+    <section id="footer" class="bg-dark text-white py-4 mt-4">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 text-center">
+                <div class="col">colonna 1</div>
+                <div class="col">colonna 2</div>
+                <div class="col">colonna 3</div>
+                <div class="col">colonna 4</div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
 </html>
