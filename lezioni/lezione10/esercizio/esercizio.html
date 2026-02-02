@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./esercizio.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img id="img-logo-small" src="./logo.png" alt="" class="d-block bg-light"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bold">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Brand</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Scopri</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Servizi
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" >Contatti</a>
+                </li>
+            </ul>
+                <span class="border rounded-pill px-3 py-1 bg-dark text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    accedi
+                </span>
+
+            </div>
+        </div>
+    </nav>
+    <section id="logo" class="mb-4 p-4 bg-body-tertiary">
+        <img id="img-logo" src="./logo.png" alt="" class="mx-auto d-block">
+    </section>
+    <section class="delta-hero d-flex align-items-center bg-grey py-5">
+    <div class="container">
+        <div class="row align-items-center bg-delta rounded-4">
+        
+        <!-- TESTO -->
+        <div class="col-lg-7 text-center  py-2">
+            <h1 class="fw-bold mb-3">
+            <span class="text-white">SOFTWARE</span><br>
+            <span class="delta-green">SU MISURA</span>
+            </h1>
+
+            <h2 class="fw-bold text-white mb-4">
+            ZERO COMPLICAZIONI<br>
+            MASSIMA EFFICIENZA
+            </h2>
+
+            <p class="lead text-dark opacity-75">
+            Soluzioni digitali, sviluppo software e automazione
+            pensate per far crescere il tuo business.
+            </p>
+
+            <a href="#" class="btn btn-delta mt-3 btn-outline-dark fw-bold">
+            Scopri Delta Software
+            </a>
+        </div>
+
+        <!-- SPAZIO A DESTRA (eventuale logo grande) -->
+        <div class="col-lg-5 d-none d-lg-flex justify-content-end  py-2">
+            <!-- <div class="delta-lettering">
+            <i class="bi bi-code-square text-white display-1"></i>
+            </div> -->
+            <img src="./team.png" alt="" class="img-fluid">
+        </div>
+
+        </div>
+    </div>
+    </section>
+    <section class="py-5 bg-grey">
+    <div class="container">
+        
+        <div class="row align-items-start g-5">
+
+        <!-- IMMAGINE -->
+        <div class="col-lg-5 p-4 rounded-4 bg-light">
+            <div class="service-image-box">
+            <!-- QUI METTI LA TUA IMMAGINE -->
+            <img src="./prodotto.png"
+                alt="Servizio Delta Informatica"
+                class="img-fluid">
+            </div>
+        </div>
+
+        <!-- TESTO + ACCORDION -->
+        <div class="col-lg-7">
+        <h2 class="fw-bold">Servizio</h2>
+
+            <h3 class="fw-bold mb-4">
+            Sviluppo Software Gestionale Personalizzato
+            </h3>
+
+            <div class="accordion accordion-flush" id="accordionDelta">
+
+            <!-- ITEM 1 -->
+            <div class="accordion-item ">
+                <h2 class="accordion-header ">
+                <button class="accordion-button collapsed fw-semibold bg-grey"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#deltaOne">
+                    Descrizione del servizio
+                </button>
+                </h2>
+                <div id="deltaOne"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionDelta">
+                <div class="accordion-body">
+                    Progettiamo e sviluppiamo software su misura
+                    per automatizzare processi aziendali, migliorare
+                    l’efficienza operativa e integrare sistemi esistenti.
+                </div>
+                </div>
+            </div>
+
+            <!-- ITEM 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-semibold  bg-grey"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#deltaTwo">
+                    Tecnologie utilizzate
+                </button>
+                </h2>
+                <div id="deltaTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionDelta">
+                <div class="accordion-body">
+                    PHP, Laravel, MySQL, API REST, Docker,
+                    integrazioni cloud e sviluppo frontend moderno.
+                </div>
+                </div>
+            </div>
+
+            <!-- ITEM 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-semibold  bg-grey"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#deltaThree">
+                    A chi è rivolto
+                </button>
+                </h2>
+                <div id="deltaThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionDelta">
+                <div class="accordion-body">
+                    Aziende, studi professionali e organizzazioni
+                    che necessitano di soluzioni software affidabili
+                    e scalabili.
+                </div>
+                </div>
+            </div>
+
+            </div>
+
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <footer class="py-5 bg-black text-white">
+    <div class="container">
+
+        <!-- TOP -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+        <strong>Delta Informatica</strong>
+
+        <span class="border rounded-pill px-3 py-1">
+            <i class="bi bi-geo-alt me-1"></i> Italia
+        </span>
+        </div>
+
+        <hr class="border-secondary">
+
+        <!-- LINK -->
+        <div class="row small text-white-50 justify-content-evenly">
+        <div class="col-sm-6 col-md-4">
+            <p class="fw-semibold text-white">Chi siamo</p>
+            <p class="mb-1">La nostra azienda</p>
+            <p class="mb-1">Servizi</p>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+            <p class="fw-semibold text-white">Hai bisogno di aiuto?</p>
+            <p class="mb-1">Contatti</p>
+            <p class="mb-1">Supporto tecnico</p>
+        </div>
+
+        <div class="col-sm-6 col-md-4 mt-4 mt-md-0">
+            <p class="fw-semibold text-white">Termini e condizioni</p>
+            <p class="mb-1">Privacy policy</p>
+            <p class="mb-1">Cookie policy</p>
+        </div>
+        </div>
+
+
+    </div>
+</footer>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      
+      <div class="modal-body">
+        <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <label for="inputPassword5" class="form-label">Password</label>
+        <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Annulla</button>
+        <button type="button" class="btn btn-outline-green bg-delta">Accedi</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
